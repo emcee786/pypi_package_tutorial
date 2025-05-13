@@ -1,18 +1,36 @@
 [project]
 name = "emcee_package"
-version = "0.3.0"
-description = "A Test package"
+version = "0.3.1"
+description = "Package with Python and C++ bindings"
 authors = [{ name = "Emcee" }]
 readme = "README.md"
 requires-python = ">=3.7"
 
-dependencies = [
-    "pandas>=2.0.0"
-]
+dependencies = []
 
 [project.scripts]
-emcee-bye = "emcee_package.main:bye"
+emcee-bye = "emcee_package.py_greetings:bye"
+emcee-laters = "emcee_package.py_greetings:laters"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build]
+sources = ["src"]
+
+[tool.hatch.metadata]
+packages = ["emcee_package"]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+include = [
+  "emcee_package/*.py",
+  "emcee_package/*.so"
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "emcee_package/*.py",
+  "emcee_package/*.so"
+]

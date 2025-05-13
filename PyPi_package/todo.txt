@@ -1,0 +1,16 @@
+X - remove pandas
+X - add C++ code that take a string and print "Hell0 this is a C++ String"
+X - figure out how to compile C++ and run with python
+- package and push to Pypi, download into a new env and Test
+- Figure how to do simd vector op in C++
+- Make C++ function that takes a 2D vector of integers and simd multiplies them and returns 1D vector of results
+- Add this to python ans be able to call it safely with a strict type checked python function
+
+
+
+- Do all my correct formatting
+- Add README
+- Add tests
+- Add linting (RUFF)
+
+publish final version to Pypi
