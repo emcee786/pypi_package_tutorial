@@ -16,13 +16,12 @@ Make sure you have [Hatch](https://hatch.pypa.io/) installed:
 ```bash
 pip install hatch
 
----
 
-Build the project:
+# Build the project:
 
 hatch build
 
-Install the package:
+# Install the package:
 
 pip install dist/emcee_package-0.3.1-py3-none-any.whl
 
