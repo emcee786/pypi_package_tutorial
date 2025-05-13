@@ -16,6 +16,8 @@ Make sure you have [Hatch](https://hatch.pypa.io/) installed:
 ```bash
 pip install hatch
 
+---
+
 Build the project:
 
 hatch build
